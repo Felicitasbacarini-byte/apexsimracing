@@ -1,133 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Apex Sim-Racing Academy</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEX | Entrena como un piloto real</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo">APEX</div>
-    <nav>
-      <a href="#metodo">Método</a>
-      <a href="#programas">Programas</a>
-      <a href="#circuitos">Circuitos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <a class="btn small" href="#programas">Inscribite</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+
+      <a href="#" class="navbar__logo" aria-label="APEX">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmoAAAC6CAYAAAAec2F5AAAFV0lEQVR42u3ZsW0bSRSA4ccDczF/wbEDsQNRnagEXQVkB1YJ7ESrDugO6ODldAV7iWAcDOgAiUtzOPw+wImDwc7b4e5v72wcxwAAoD1/GQEAgFADAECoAQBcv/ktbDIz1xGxnmCpoaoGx+ai93JrCldjV1UH5xPns6tzdaiqnd/ueVXV9qZC7T3SNhOtJdQua2MEV2OIiIPzifPZ1bl6i4id3+7Z/Qo1nz4BABol1AAAhBoAAEINAECoAQAg1AAAhBoAAEINAAChBgAg1AAAEGoAAEINAAChBgCAUAMAEGoAAAg1AIBuzFu+uMx8ioinCZZaTnRJT5m5nmCd56raO3507iUzj6cuUlVrowSEWpuWEfHQ0PX8/f7nVAtHjxtwbwQAp/HpEwBAqAEAINQAAIQaAABCDQBAqAEAINQAABBqAABCDQAAoQYAINQAABBqAAAINQAAoQYAgFADABBqAACc1/wci2bmKiJeJlhq2encXzLzOME6z1W1d4wv5kdE7Drc18atdT5vwMEIvmSVmcME6+yr6nmC3niJiJVQ+7xFRDw4zx+6n3DOXPBBX1Xb3jaVmULN+YSP3DX2fl/13hs+fQIACDUAAIQaAIBQAwBAqAEACDUAAIQaAABCDQBAqAEAINQAAIQaAABCDQAAoQYAINQAABBqAABCDQCA85r//heZOXa4z+8R8TzBOi8Rcd/Qvl4z8+RFqmrmpwDQrMcJ1lhFxLeG9vTQaW/8ExH7s4Zap45VNZy6SGYePS8A+JMmen8Z5J+xn+J+/ZdPnwAAjRJqAABCDQAAoQYAINQAABBqAABCDQAAoQYAgFADABBqAAAINQAAoQYAgFADAECoAQAINQAAPm9uBABdWmTmusN97avq6PYi1NrwVlXNPGimupbMHB094MzuI+K1w309RsTg9n76/TVExGyC99c2IjY9nqv3GTXHp08AgEYJNQAAoQYAgFADABBqAAAINQAAoQYAgFADAECoAQAINQAAhBoAgFADAECoAQAg1AAAhBoAAEINAKAbcyOAL1tk5toYgNZl5iIiVhMstex0RKvMnGKdfVUdhRq04T4iXo0BuIYQ8bz6X98mWucxIoYpL8ynTwCARgk1AAChBgCAUAMAEGoAAAg1AAChBgCAUAMAQKgBAAg1AACEGgCAUAMAQKgBACDUAACEGgAAQg0AoBvzxq9vmZlbtwmu0veIOBrDxfyMiH2H+7q5MzXRe3DZ6flcRcRdQ/t6ysz1qYtU1a97PhvH8fcDMXq+3Zaqml3RA8v5vB6PVTXc2Au1pfP5VlVrx9C5atQk5zMzh4h46Pm97NMnAECjhBoAgFADAECoAQAINQAAhBoAgFADAECoAQAg1AAAhBoAAEINAECoAQAg1AAAEGoAAEINAAChBgDQjbkRwJf9iIidMXzoYATguXfm58MuIoYJ1tkINegwRKpqawyA595lVNUk/1jOzGZDzadPAAChBgCAUAMAEGoAAAg1AAChBgCAUAMAQKgBAAg1AACEGgCAUAMAQKgBACDUAACEGgAAQg0AQKgBAHBe88av70dE7Dqc+8bRA85slZmDMXzouar2xoBQO82hqra9DT0zhRpwbncR8WAMH1oYAdfAp08AAKEGAIBQAwAQagAACDUAAKEGAIBQAwBAqAEACDUAAIQaAIBQAwBAqAEAINQAAIQaAABCDQBAqAEAINQAAIQaAABCDQAAoQYAINQAABBqAABCDQAAoQYAgFADABBqAAAINQAAoQYAgFADABBqAAAINQAAhBoAgFADAECoAQDcitk4jqYAANAg/6MGACDUAAD4jH8BC+/O6yJDBVUAAAAASUVORK5CYII=" alt="APEX" class="navbar__logo-img">
+      </a>
+
+      <nav class="navbar__nav" aria-label="Navegación principal">
+        <a href="#cursos" class="navbar__link">CURSOS</a>
+        <a href="#telemetria" class="navbar__link">TELEMETRÍA</a>
+        <a href="#simuladores" class="navbar__link">SIMULADORES</a>
+      </nav>
+
+      <a href="#registro" class="btn btn--nav">
+        <span class="btn__bg" aria-hidden="true"></span>
+        <span class="btn__text">REGISTRATE</span>
+      </a>
+
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-text">
-        <p class="tag">SIM-RACING ACADEMY</p>
-        <h1>ENTRENÁ COMO UN PILOTO REAL</h1>
-        <p>Formación para pilotos virtuales con simuladores profesionales, telemetría y entrenamiento competitivo.</p>
-        <a class="btn" href="#programas">Ver programas</a>
-      </div>
-      <div class="hero-image"></div>
-    </section>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__gradient" aria-hidden="true"></div>
 
-    <section class="stats">
-      <article><span>120+</span><p>Pilotos formados</p></article>
-      <article><span>500+</span><p>Horas de simulación</p></article>
-      <article><span>95%</span><p>Finalización</p></article>
-      <article><span>12</span><p>Torneos disputados</p></article>
-    </section>
+    <!-- cubos decorativos amarillos -->
+    <span class="hero__cube hero__cube--1" aria-hidden="true"></span>
+    <span class="hero__cube hero__cube--2" aria-hidden="true"></span>
+    <span class="hero__cube hero__cube--3" aria-hidden="true"></span>
 
-    <section class="about">
-      <div>
-        <p class="tag">SOBRE APEX</p>
-        <h2>DE LA PANTALLA A LA PISTA</h2>
-        <p>Apex conecta la simulación virtual con el rendimiento profesional. Entrenamos pilotos capaces de interpretar datos, optimizar cada vuelta y competir con estrategia.</p>
-      </div>
-      <div class="about-card">
-        <div class="track-line"></div>
-      </div>
-    </section>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="reveal" data-reveal>ENTRENA COMO</span>
+        <span class="reveal" data-reveal>UN PILOTO REAL</span>
+      </h1>
 
-    <section id="metodo" class="section dark">
-      <p class="tag">METODOLOGÍA</p>
-      <h2>LOS TRES PILARES DE APEX</h2>
-      <div class="cards three">
-        <article class="card">
-          <span>01</span>
-          <h3>Iniciación</h3>
-          <p>Fundamentos de conducción, configuración del simulador, trazadas y hábitos de manejo.</p>
-        </article>
-        <article class="card">
-          <span>02</span>
-          <h3>Telemetría</h3>
-          <p>Análisis de datos, comparación de vueltas, frenada, aceleración y sectores críticos.</p>
-        </article>
-        <article class="card">
-          <span>03</span>
-          <h3>Competición</h3>
-          <p>Estrategia de carrera, gestión de presión, consistencia y preparación para campeonatos.</p>
-        </article>
-      </div>
-    </section>
+      <p class="hero__subtitle reveal" data-reveal>
+        La simulación ya no es un juego. Formamos pilotos virtuales mediante
+        telemetría, análisis y entrenamiento.
+      </p>
 
-    <section id="programas" class="section programs">
-      <p class="tag">FORMACIÓN</p>
-      <h2>PROGRAMAS DISPONIBLES</h2>
-      <div class="program-list">
-        <article>
-          <div>
-            <h3>Programa Rookie</h3>
-            <p>Nivel inicial · 4 semanas</p>
-          </div>
-          <a href="#contacto">Inscribirme</a>
-        </article>
-        <article>
-          <div>
-            <h3>Programa Performance</h3>
-            <p>Nivel intermedio · 8 semanas</p>
-          </div>
-          <a href="#contacto">Inscribirme</a>
-        </article>
-        <article>
-          <div>
-            <h3>Programa Advanced</h3>
-            <p>Nivel avanzado · 12 semanas</p>
-          </div>
-          <a href="#contacto">Inscribirme</a>
-        </article>
-      </div>
-    </section>
+      <a href="#programas" class="btn btn--hero reveal" data-reveal>
+        <span class="btn__bg" aria-hidden="true"></span>
+        <span class="btn__text">VER PROGRAMAS</span>
+      </a>
+    </div>
+  </section>
 
-    <section id="circuitos" class="section circuits">
-      <p class="tag">CIRCUITOS</p>
-      <h2>ENTRENAMOS EN TRAZADOS CLAVE</h2>
-      <div class="cards five">
-        <article><div class="mini-track a"></div><h3>Interlagos</h3><p>Ideal para entrenar consistencia y gestión del ritmo.</p></article>
-        <article><div class="mini-track b"></div><h3>Spa</h3><p>Perfecto para trabajar velocidad y referencias de frenada.</p></article>
-        <article><div class="mini-track c"></div><h3>Monza</h3><p>Escenario ideal para optimizar frenadas y aceleración.</p></article>
-        <article><div class="mini-track d"></div><h3>Silverstone</h3><p>Desarrollá confianza en curvas rápidas.</p></article>
-        <article><div class="mini-track e"></div><h3>Suzuka</h3><p>Perfeccioná técnica y precisión en trazados complejos.</p></article>
-      </div>
-    </section>
+  <!-- destello amarillo que sigue al cursor -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-    <section class="section testimonials">
-      <p class="tag">TESTIMONIOS</p>
-      <h2>EXPERIENCIAS DE PILOTOS</h2>
-      <div class="cards three">
-        <article class="quote">“Bajé más de un segundo por vuelta entendiendo la telemetría.”<strong>Martín G.</strong></article>
-        <article class="quote">“Pasé de correr por diversión a entrenar de forma profesional.”<strong>Lucas R.</strong></article>
-        <article class="quote">“El análisis de datos cambió mi manera de manejar.”<strong>Sofía M.</strong></article>
-      </div>
-    </section>
-
-    <section id="contacto" class="cta">
-      <h2>NO ENTRENAMOS JUGADORES. FORMAMOS PILOTOS.</h2>
-      <a class="btn" href="mailto:info@apexacademy.com">Contactar</a>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Apex Sim-Racing Academy. Todos los derechos reservados.</p>
-    <p>Términos y Condiciones · Política de Privacidad · Política de Cookies</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
